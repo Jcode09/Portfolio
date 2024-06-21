@@ -16,7 +16,7 @@ html {
     background-size: cover;
     background-position: center;
     opacity: 0.8;
-    position: relative;
+    position: center;
 }
 
 .content {
