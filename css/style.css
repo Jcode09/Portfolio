@@ -9,15 +9,23 @@ html {
     scroll-behavior: smooth;
 }
 
-/* HOME SECTION */
+/*HOME SECTION*/
 .home {
     height: 100vh;
-    width: 100%;
     background-image: url(../img/backgroundcover.jpg);
     background-size: cover;
     background-position: center;
-    z-index: -1;
-    opacity: .8;
+    opacity: 0.8;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 100%;
 }
 
 /* NAV SECTION */
