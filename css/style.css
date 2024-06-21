@@ -438,27 +438,35 @@ footer p:nth-child(2){
     }
 }
 
+/* Media Query Adjustment for Mobile */
 @media only screen and (max-width: 768px) {
     .about {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Center align items */
     }
+
     .about img {
         width: 100%;
-        max-width: 300px;
+        max-width: 300px; /* Adjust image width as needed */
+        margin-bottom: 20px; /* Add margin to create space between image and text */
     }
+
     .about-text {
         width: 100%;
-        text-align: center;
-        padding: 20px;
+        max-width: 300px; /* Limit text width */
+        text-align: center; /* Center align text */
     }
+
     .about-text h2 {
-        font-size: 50px;
+        font-size: 50px; /* Adjust heading size */
     }
+
     .about-text h5 {
-        font-size: 18px;
+        font-size: 18px; /* Adjust subheading size */
     }
+
     .about-text p {
-        font-size: 16px;
+        font-size: 16px; /* Adjust paragraph size */
+        margin-bottom: 30px; /* Add margin for spacing */
     }
 }
