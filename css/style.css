@@ -120,63 +120,48 @@ h4{
 	right: 6px; 
 }
 
-/* ABOUT SECTION */
-#about {
-    width: 100%;
-    padding: 100px 0px;
-    background-color: #191919;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items vertically */
+/*ABOUT SECTION*/
+#about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 }
-
-.about {
-    width: 100%;
-    max-width: 1130px; /* Adjusted to match .main width */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row; /* Default row direction */
-    margin-bottom: 50px; /* Added margin bottom for spacing */
+.about img{
+	height: auto;
+	width: 430px;
+	border-radius: 15px;
 }
-
-.about img {
-    height: auto;
-    width: 430px;
-    border-radius: 15px;
-    margin-bottom: 20px; /* Space between image and text */
+.about-text{
+	width: 550px;
 }
-
-.about-text {
-    width: 100%;
-    max-width: 550px; /* Limit text width */
-    text-align: center; /* Center align text */
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-
-.about-text h2 {
-    color: white;
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
 }
-
-.about-text h5 {
-    color: white;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
 }
-
-.about-text p {
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
 }
-
 button{
 	background-color:#f9004d;
 	color: white;
@@ -410,81 +395,52 @@ footer p:nth-child(2){
     box-shadow: 0 0 10px white;
 }
 
-
-@media only screen and (max-width: 768px) {
-    nav {
+/* Example Media Queries */
+@media (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .nav-menu {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        padding-top: 20px;
-    }
-    nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
         width: 100%;
+        background-color: #191919;
+        z-index: 1000;
+    }
+    .nav-menu.active {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
     }
-    nav ul li {
-        padding: 10px 0;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .content {
-        position: static;
-        transform: none;
+    .nav-menu li {
+        width: 100%;
         text-align: center;
-        padding: 20px;
     }
-    .content h1 {
-        font-size: 50px;
+    .nav-menu li a {
+        padding: 15px;
+        display: block;
     }
-    .content h3 {
-        font-size: 20px;
+    .nav-toggle-label {
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 1001;
     }
-    .newslatter form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .nav-toggle-label span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.3s ease;
     }
-    .newslatter form input:first-child,
-    .newslatter form input:last-child {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
-
-/* Media Query Adjustment for Mobile */
-@media only screen and (max-width: 768px) {
-    .about {
-        flex-direction: column; /* Change flex-direction to column */
-        align-items: center; /* Center align items horizontally */
-        justify-content: center; /* Center align items vertically */
-        text-align: center; /* Center align text */
-    }
-
-    .about img {
-        width: 100%;
-        max-width: 300px; /* Adjust image width as needed */
-        margin-bottom: 20px; /* Add margin to create space between image and text */
-    }
-
-    .about-text {
-        width: 100%;
-        max-width: 300px; /* Limit text width */
-        text-align: center; /* Center align text */
-        margin-top: 20px; /* Optional: Add margin at the top for spacing */
-    }
-
-    .about-text h2 {
-        font-size: 50px; /* Adjust heading size */
-    }
-
-    .about-text h5 {
-        font-size: 18px; /* Adjust subheading size */
-    }
-
-    .about-text p {
-        font-size: 16px; /* Adjust paragraph size */
-        margin-bottom: 30px; /* Add margin for spacing */
+    .nav-toggle:checked + .nav-toggle-label .nav-toggle-label span {
+        background-color: transparent;
     }
 }
