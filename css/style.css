@@ -457,7 +457,9 @@ footer p:nth-child(2){
 @media only screen and (max-width: 768px) {
     .about {
         flex-direction: column; /* Change flex-direction to column */
-        align-items: center; /* Center align items */
+        align-items: center; /* Center align items horizontally */
+        justify-content: center; /* Center align items vertically */
+        text-align: center; /* Center align text */
     }
 
     .about img {
@@ -470,24 +472,19 @@ footer p:nth-child(2){
         width: 100%;
         max-width: 300px; /* Limit text width */
         text-align: center; /* Center align text */
-        margin-top: 20px; /* Add margin at the top for spacing */
-        margin-bottom: 20px; /* Add margin at the bottom for spacing */
-        padding: 0 20px; /* Optional: Add padding for better text alignment */
+        margin-top: 20px; /* Optional: Add margin at the top for spacing */
     }
 
     .about-text h2 {
         font-size: 50px; /* Adjust heading size */
-        margin-bottom: 10px; /* Adjust margin bottom as needed */
     }
 
     .about-text h5 {
         font-size: 18px; /* Adjust subheading size */
-        margin-bottom: 10px; /* Adjust margin bottom as needed */
     }
 
     .about-text p {
         font-size: 16px; /* Adjust paragraph size */
-        margin-bottom: 20px; /* Adjust margin bottom as needed */
+        margin-bottom: 30px; /* Add margin for spacing */
     }
 }
-
