@@ -95,6 +95,41 @@ nav ul li a:hover {
     transform: translateY(-50%);
 }
 
+
+/* Example Media Queries */
+@media (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px; /* Adjusted padding for better spacing */
+    }
+
+    .logo {
+        font-size: 28px; /* Adjusted font size for logo */
+        margin-bottom: 15px; /* Added margin bottom for spacing */
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0; /* Adjusted padding for vertical spacing */
+    }
+
+    nav ul li a {
+        padding: 10px 20px; /* Adjusted padding for horizontal spacing */
+    }
+    
+    .btn {
+        margin-top: 20px; /* Added margin top for spacing */
+    }
+}
+
+
 /* HOMEPAGE SECTION */
 h1 {
     color: white;
