@@ -89,24 +89,6 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: row; /* Change to horizontal layout */
-        justify-content: center; /* Center align items */
-        width: 100%; /* Ensure full width */
-        padding: 10px 0; /* Adjust padding as needed */
-    }
-
-    nav ul li {
-        padding: 10px 15px; /* Padding around each link */
-    }
-
-    nav ul li a {
-        font-size: 16px; /* Adjust font size if needed */
-    }
-}
-
-
 /* HOMEPAGE SECTION */
 h1 {
     color: white;
