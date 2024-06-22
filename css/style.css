@@ -13,10 +13,10 @@ html {
 .home {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/backgroundcover.jpg);
+    background-image: url(../img/desk1.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.9;
     position: relative;
 }
 
@@ -72,6 +72,7 @@ nav ul li a:hover {
     color: #f9004d;
     transition: all .5s ease;
 }
+
 
 .btn {
     background-color: #f9004d;
@@ -316,10 +317,122 @@ h5 {
     cursor: pointer;
 }
 
+/* PROJECTS SECTION Name */
+#projects {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.gallery-item:hover .title {
+    display: block;
+    color: #f9004d; /* Main color of the site */
+}
+
+
 /* CONTACT ME SECTION */
 .contact-me {
     width: 100%;
-    padding: 50px 20px; /* Adjusted for better spacing */
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* CONTACT INFO SECTION */
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f9004d;
+}
+.contact-item p {
+    font-size: 18px;
+}
+
+/* CONTACT ME SECTION 
+.contact-me {
+    width: 100%;
+    padding: 50px 20px; 
     background: #191919;
     display: flex;
     align-items: center;
@@ -351,11 +464,13 @@ h5 {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+*/
 
-/* CONTACT FORM SECTION */
+
+/* CONTACT FORM SECTION 
 #contacts {
     width: 100%;
-    padding: 50px 20px; /* Adjusted for better spacing */
+    padding: 50px 20px; 
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     display: flex;
@@ -402,8 +517,8 @@ h5 {
     color: #f9004d;
     box-shadow: 0 0 10px white;
     border: 1px solid #f9004d;
-}
-
+} 
+*/
 
 /* FOOTER SECTION */
 footer {
@@ -517,4 +632,17 @@ footer p:nth-child(2) {
         width: 90%;
         margin: 15px auto;
     }
+}
+
+
+.end {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    transition: color 0.3s; /* Only transition the color */
+}
+
+.end:hover {
+    color: #f9004d; /* Change text color to main color of the site on hover */
 }
