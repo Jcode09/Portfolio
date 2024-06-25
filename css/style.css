@@ -250,11 +250,8 @@ button:hover {
     padding: 100px 0;
 }
 
-#skill .title {
-    display: block; /* Add this rule */
-}
-
-.title h2 {
+#skill .headings {
+    display: block;
     color: white;
     font-size: 5vw;
     width: 100%;
