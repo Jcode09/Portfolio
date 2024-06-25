@@ -256,7 +256,7 @@ button:hover {
     font-size: 5vw;
     width: 100%;
     max-width: 1130px;
-    margin: 30px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
