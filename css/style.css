@@ -146,8 +146,9 @@ h4 {
 
 /* ABOUT SECTION */
 #about {
+    background: #191919;
+    width: 100%;
     padding: 100px 0;
-    background-color: #191919;
 }
 
 .main {
@@ -220,6 +221,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
@@ -253,7 +255,7 @@ button:hover {
 #skill .headings {
     display: block;
     color: white;
-    font-size: 5vw;
+    font-size: 8vw;
     width: 100%;
     max-width: 1130px;
     margin: 0 auto;
