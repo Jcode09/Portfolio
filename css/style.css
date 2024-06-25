@@ -250,6 +250,10 @@ button:hover {
     padding: 100px 0;
 }
 
+#skill .title {
+    display: block; /* Add this rule */
+}
+
 .title h2 {
     color: white;
     font-size: 5vw;
@@ -317,6 +321,7 @@ h5 {
     cursor: pointer;
 }
 
+
 /* PROJECTS SECTION Name */
 #projects {
     display: flex;
@@ -360,6 +365,7 @@ h5 {
     color: white;
     transition: color 0.3s;
 }
+
 
 .gallery-item:hover .title {
     display: block;
