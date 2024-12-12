@@ -16,34 +16,39 @@
 
 	<!----Home Section---->
 
-	<div class="home"> 
-		<nav>
-			<h2 class="logo">Portfo<span>lio</span></h2>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#skill">Skills</a></li>
-				<li><a href="#contacts">Contact Me</a></li>
-			</ul>
-			<a href="resumefol/resume.html" class="btn">Resume</a>
-		</nav>
-		
+<!-- Add this icon element to your HTML -->
+<div id="nav-icon">
+    &#9776; <!-- This is the hamburger icon -->
+</div>
+<section id="home">
+<div class="home"> 
+    <nav id="navbar">
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contacts">Contact Me</a></li>
+        </ul>
+        <a href="resumefol/resume.html" class="btn">Resume</a>
+    </nav>
 
-		<div class="content">
-			<h4>Computer Engineering</h4>
-			<h1>Jeriebel <span> Calunsag</span></h1>
-			<h3>UBCOMPESA</h3>
-			<div class="newslatter">
-				<form>
-					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="button" name="submit" value="Contact Me" onclick="location.href='#contacts';">
-				</form>			
-			</div>
-		</div>
-	</div>
+    <div class="content">
+        <h4>Computer Engineering</h4>
+        <h1>Jeriebel <span> Calunsag</span></h1>
+        <h3>UBCOMPESA</h3>
+        <div class="newslatter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="button" name="submit" value="Contact Me" onclick="location.href='#contacts';">
+            </form>   
+        </section>         
+        </div>
+    </div>
+</div>
 
-	<!----About Section---->
+	<!----About Section
 	<section id="about">
 		<div class="main">
 			<img src="img/jbl.png">
@@ -54,7 +59,111 @@
 				<p>I am a Computer Engineer of University of Bohol, as a UBCOMPESA I have faced great challenges through these journeys and created a lot of projects and activities, I am here to share my skills and knowledges to help you with your needs. </p>
 				<button type="button" class="btn" onclick="location.href='#contacts';">Let's Talk</button>
 			</div>
-	</section>
+	</section> ---->
+
+	    <!-- About Section Image Transition -->
+		<section id="about">
+			<div class="main">
+				<div class="image-container">
+					<img src="img/jbl.png" class="image-1">
+					<img src="img/ub.png" class="image-2">
+					<img src="img/compesa.png" class="image-3">
+					<img src="img/collegeofeng.png" class="image-4">
+				</div>
+				<div class="about-text">
+					<h2>About Me</h2>
+					<h5>Student <span>& Developer</span></h5>
+					<p>I am a Computer Engineer of University of Bohol, as a UBCOMPESA I have faced great challenges through these journeys and created a lot of projects and activities, I am here to share my skills and knowledges to help you with your needs. </p>
+					<button type="button" class="btn" onclick="location.href='#contacts';">Let's Talk</button>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- Information Section -->
+<section id="information">
+    <h1 class="headings">Information</h1>
+    <div class="info-container">
+        <div class="info-item">
+            <i class="fas fa-user"></i>
+            <div class="info-text">
+                <h5>Name</h5>
+                <p>Jeriebel Bulac Calunsag</p>
+            </div>
+            <div class="info-box">
+                <p>Hi, I'm Jeriebel B. Calunsag, 21 Years Old and an Aspiring Computer Engineering Student.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-birthday-cake"></i>
+            <div class="info-text">
+                <h5>Date of Birth</h5>
+                <p>September 22, 2002</p>
+            </div>
+            <div class="info-box">
+                <p>Celebrating life and joy! Always Chasing Dreams.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info-text">
+                <h5>Address</h5>
+                <p>Poblacion, Dauis, Bohol</p>
+            </div>
+            <div class="info-box">
+                <p>Find me in the heart of Bohol.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div class="info-text">
+                <h5>Number</h5>
+                <p>0910 4066 292</p>
+            </div>
+            <div class="info-box">
+                <p>Available for a chat!</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="info-text">
+                <h5>Degree</h5>
+                <p>Bachelor of Science in Computer Engineering</p>
+            </div>
+            <div class="info-box">
+                <p>Engineering the future.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div class="info-text">
+                <h5>Email</h5>
+                <p>jebelbulac@gmail.com</p>
+            </div>
+            <div class="info-box">
+                <p>Let's connect via email.</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-laptop-code"></i>
+            <div class="info-text">
+                <h5>Freelance</h5>
+                <p>Available</p>
+            </div>
+            <div class="info-box">
+                <p>Ready for your projects!</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.5231080489223!2d123.80871525842624!3d9.595423234329159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f8a72ff1d39%3A0x6d0b8f93756bb77a!2sPoblacion%2C%20Dauis%2C%20Bohol!5e0!3m2!1sen!2sph!4v1625246929624!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info-box">
+                <p>Explore the map for location.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!----Project Section---->
 <section id="projects">
@@ -63,13 +172,13 @@
     <div class="gallery">
         <div class="gallery-item">
             <a href="project/proj1/proj.html">
-                <img src="img/regulacalcu1.png" alt="">
+                <img src="img/calculator.png" alt="">
             </a>
-            <div class="title">Regula Falsi Calculator</div>
+            <div class="title">Regula Falsi/Secant Calculator</div>
         </div>
         <div class="gallery-item">
             <a href="project/proj2/proj2.html">
-                <img src="img/calendar.png" alt="">
+                <img src="img/calendarevent.png" alt="">
             </a>
             <div class="title">Event Scheduler</div>
         </div>
@@ -122,11 +231,21 @@
             <div class="title">AutoCad</div>
         </div>
 		<div class="gallery-item">
+            <a href="project/proj11/proj11.html">
+                <img src="img/soulabel.png" alt="">
+            </a>
+            <div class="title">soulabel Cafe</div>
+        </div>
+
+		<!-- 
+		<div class="gallery-item">
             <a href="https://drive.google.com/drive/folders/1UQdguuwWt0wI5UgtauZWjemODCGye1ha?usp=sharing">
                 <img src="img/plus.png" alt="">
             </a>
             <div class="title">Add Project</div>
         </div> 
+		-->
+
 		<!--  <div class="gallery-item">
             <a href="https://drive.google.com/drive/folders/1UQdguuwWt0wI5UgtauZWjemODCGye1ha?usp=sharing">
                 <img src="img/plus.png" alt="">
@@ -171,7 +290,7 @@
 				<i class="fa-solid fa-c"></i>
 				<h5>C/C# Language</h5>
 				<div class="pra">
-					<p>During my 3rd year, I learned my skill in C/C# language Programming, created Arduino Projects, creating interactive objects etc. and skills for debugging.</p>
+					<p>During my 3rd year, I learned my skill in C/C#/C++ language Programming, created Arduino Projects, creating interactive objects etc. and skills for debugging.</p>
 
 					<p style="text-align: center;">
 						<a class="button" href="https://www.tutorialspoint.com/arduino/index.htm">Learn</a>
@@ -182,12 +301,9 @@
 </section>
 
 <!------Contact Section------>
-<div class="contact-me">
-    <p>Let Me Help You.</p>
-    <a class="button-two" href="resumefol/resume.html">Hire Me</a>
-</div>
 <section id="contacts">
     <h1 class="headings">CONTACTS</h1>
+	
     <div class="contact-info">
         <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
@@ -205,20 +321,26 @@
             <i class="fas fa-globe"></i>
             <p>Website: https://jcode09.github.io/Portfolio/</p>
         </div>
+    </section>
     </div>
+<div class="contact-me">
+    <p>Let Me Help You.</p>
+    <a class="button-two" href="resumefol/resume.html">Hire Me</a>
+</div>
 </section>
 
 	<!------Footer Section--------->
 	<footer>
-		<p>Jeriebel Calunsag</p>
-		<p>For more information, please click the link below to follow me:</p>
+		<p>Jeriebel Bulac Calunsag</p>
+		<p>You can follow me in my Socials:</p>
 		<div class="social">
 			<a href="https://www.facebook.com/j.jbaxx/"><i class="fab fa-facebook-f"></i></a>
 			<a href="https://www.instagram.com/jebeeelllll/"><i class="fab fa-instagram"></i></a>
 			<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
 		</div>
-		<p class="end">CopyRight By Jeriebel Calunsag</p>
+		<p class="end">© 2024 Calunsag. All rights reserved.</p>
 	</footer>
+	<script src="css/main.js"></script>
 </body>
 </html>
 
